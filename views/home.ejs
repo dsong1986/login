@@ -1,0 +1,75 @@
+<%- include('partials/header') %>
+
+    <div class="center">
+        <button id="show-login">Login</button>
+    </div>
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in or Sign up</h2>
+            <hr color="#e6e6e6">
+            <h1>Welcome to Ethan</h1>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button>Sign in </button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot password</a>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-5">
+                    <hr style="margin-top:7px">
+                </div>
+                <div class="col">
+                    <h5 style=" font-size:12px;font-weight:10;">or</h5>
+                </div>
+                <div class="col-5">
+                    <hr style="margin-top:7px">
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-dark" type="button">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-1" style="text-align: left;">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </div>
+                        <div class="col-11">
+                            Continue with Facebook
+                        </div>
+                    </div>
+                </div>
+            </button>
+
+            <button class="btn btn-outline-dark" type="button">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-1" style="text-align: left;">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="col-11">
+                            Continue with Google
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
